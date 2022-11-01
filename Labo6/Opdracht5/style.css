@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    color: #191970;
+    background-color: lightgray;
+}
+
+.with-icon {
+    background-image: url("hyperlink.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
