@@ -18,10 +18,9 @@ a:hover{
     border-style: dotted;
     border-width: 1px;
 }
-a:before{
-    background-image: url('hyperlink.png');
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-size: 20px;
+.icon {
+    background-image: url('../Opdracht5/hyperlink.png');
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
 }
