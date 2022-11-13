@@ -13,7 +13,6 @@
 h1 {
     font-size: 2.3em;
     margin: 0px 0px;
-    font-family: ".SF NS";
 }
 
 h2 {
@@ -81,4 +80,8 @@ margin-left: 449px;
 }
 #beyonce {
     margin-left: 443px;
+}
+
+div p#friends {
+    margin-top: 60px;
 }

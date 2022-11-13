@@ -1,0 +1,37 @@
+table {
+    border: solid black;
+    text-align: left;
+    width: 20%;
+    border-collapse: collapse;
+}
+
+table tbody tr,
+table tbody td {
+    border: 1px dotted black;
+}
+
+table thead th {
+    text-align: center;
+    background-color: rgb(170,170,200);
+    border: 1px dotted;
+}
+
+table tbody td.feestdag {
+    background-color: rgb(250,120,120);
+}
+
+table tbody tr.weekday td {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+    border: 1px dotted;
+}
+
+table tbody td:first-child,
+table tbody td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+table tbody td.previous-next-month {
+    background-color: grey;
+    color: darkgrey;
+}
