@@ -1,0 +1,34 @@
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "menu main ads"
+        "footer footer footer";
+
+}
+
+.header {
+    grid-area: hoofding;
+}
+.wrapper >* {
+    border: 1px solid black;
+}
+
+main{
+    grid-area: ads;
+}
+
+footer{
+    grid-area: contact;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+           "header header header"
+        "menu main ads"
+        "footer footer footer";
+    }
+}

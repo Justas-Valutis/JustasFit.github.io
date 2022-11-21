@@ -1,0 +1,15 @@
+.grid > div{
+    border: 1px solid red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-auto-rows: 50px;
+    list-style: none;
+
+}
+li {
+    border: 1px solid red;
+}
+
