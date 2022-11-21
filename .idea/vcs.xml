@@ -6,5 +6,7 @@
     <mapping directory="$PROJECT_DIR$/Flexbox/Opdracht-Flexbox" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Flexbox/flexbox-opdracht" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Opdracht-Flexbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/flexbox-opdracht" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/flexbox-opdracht/Flexbox" vcs="Git" />
   </component>
 </project>
