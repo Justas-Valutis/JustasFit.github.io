@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flexbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flexbox/Opdracht-Flexbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flexbox/flexbox-opdracht" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Opdracht-Flexbox" vcs="Git" />
   </component>
 </project>
