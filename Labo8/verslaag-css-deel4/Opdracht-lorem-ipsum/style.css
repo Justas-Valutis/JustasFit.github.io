@@ -1,0 +1,13 @@
+
+section {
+    float: left;
+    width: 49%;
+    padding: 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.section-2 {
+    margin-left: 0px;
+}
