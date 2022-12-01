@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font: Arial, Halvetica, sans-serif;;
+}
+
+#header-image {
+    background-image: url("fotos/bgsky3.jpg");
+    height: 200px;
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#title {
+    font: 300% bold italic;
+    margin: 0px;
+
+}
+
+#ttile2 {
+    font: 240% bold;
+    position: absolute;
+    top: 50px;
+}
+
+#header-image img {
+    position: absolute;
+    margin-top: 34px; /*  the height of picture element is 106px, the total height of parent is 200px,
+                         and we need space from bottom 60px 200-106-60-34 */
+    margin-left: 280px;  /* parent element width 960px, element stands in the middle so in position 480px
+                        the width of the element is 219px, half of it is 110px, so 480px-110px-90px=280px */
+}
+
+#news {
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    float: right;
+}
+
+#news p {
+    color: #666666;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#news h3 {
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    width: 700px;
+    margin-right: 10px;
+    float: left;
+}
+#logo\+intro {
+    display: flex;
+    justify-content: stretch;
+
+}
+#introduction-area {
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+#airbus-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+#logo\+intro #blue-text {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#gallery {
+    width: 700px;
+    clear: both;
+    background-color: #999999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gallery .foto img {
+    width: 180px;
+    height: 180px;
+}
+
+#gallery .foto {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px dotted #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#gallery .foto-bottom{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px dotted #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#bottom {
+    clear: both;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottom-block {
+    margin-left: 120px;
+}
+
+.bottom-block a:hover {
+    color: red;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+

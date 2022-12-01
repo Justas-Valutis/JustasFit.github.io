@@ -1,0 +1,22 @@
+body {
+    background-color: lightgrey;
+    font: 1.2em sans-serif;
+    margin: 0px;
+}
+
+article {
+    border: 1px solid black;
+    padding-left: 10px;
+    min-height: 240px;
+    margin: 0px 10px 10px;
+}
+
+article:nth-child (2n+1) img {
+    float:left;
+    margin: 0px 10px 0px 0px;
+}
+
+article:nth-child(2n) img {
+    float: right;
+    margin: 0px 0px 0px 10px;
+}
