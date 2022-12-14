@@ -1,0 +1,59 @@
+
+.main {
+    background-color: rgb(234, 240, 225);
+    width: 95%;
+    height: 95%;
+    padding: 20px 40px 20px 40px;
+    font-size: 1em;
+    font-family: Arial;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin: 0px 0px;
+}
+
+#info {
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+
+#myphoto {
+    max-width:500px;
+    width: auto;
+    height: auto;
+}
+
+.hobbies-favoritemovies-favoriteartists {
+    border-top: groove;
+    padding-top: 24.170px;
+    text-align: center;
+}
+ ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+ li {
+     display:flex;
+     flex-direction: column;
+
+ }
+
+
+li pi {
+    display:flex;
+    justify-content: center;
+}
+
+div p#friends {
+    margin-top: 60px;
+}
