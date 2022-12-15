@@ -10,27 +10,42 @@
     text-align:center;
 }
 
-.block.block1{
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
 
+.block.block1{
+    background-color: darkred;
+    grid-area: 1/1/1/4;
  }
 .block.block2{
-
+    background-color: blue;
+    grid-area: 2/1/4/1;
 }
 .block.block3{
-
+    background-color: lightblue;
+    grid-area: 2/2/2/3;
 }
 .block.block4{
-
+    background-color: green;
+    grid-area: 2/3/2/4;
 }
 .block.block5{
-
+    background-color: lightcoral;
+    grid-area: 3/2/4/4;
 }
 .block.block6{
-
+    background-color: red;
+    grid-area: 4/1/5/3;
 }
 .block.block7{
-
+    background-color: blue;
+    grid-area: 4/3/5/4;
 }
 .block.block8{
-
+    background-color: lightblue;
+    grid-area: 5/1/6/4;
 }
