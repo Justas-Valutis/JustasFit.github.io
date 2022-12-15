@@ -1,0 +1,50 @@
+/* items */
+
+section div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* specific item styles */
+
+.item-1 {
+    background: #b03532;
+    border: 6px solid white;
+}
+.item-2 {
+    background: #33a8a5;
+    border: 6px solid white;
+}
+.item-3 {
+    background: #30997a;
+    border: 6px solid white;
+}
+.item-4 {
+    background: #6a478f;
+    border: 6px solid white;
+}
+.item-5 {
+    background: #da6f2b;
+    border: 6px solid white;
+}
+.item-6 {
+    background: #3d8bb1;
+    border: 6px solid white;
+}
+.item-7 {
+    background: #e03f3f;
+    border: 6px solid white;
+}
+.item-8 {
+    background: #59a627;
+    border: 6px solid white;
+}
+.item-9 {
+    background: #4464a1;
+    border: 6px solid white;
+}
+
+
