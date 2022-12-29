@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 95%;
+    height: 95%;
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+h1, h2 {
+    color: #007e7e;
+}
+
+#weekly-specials {
+    font-size: 150%;
+    background-image: url("images/cocktail.gif");
+    background-repeat: repeat;
+    padding-top: 45px;
+    margin-top: 0px;
+}
+
+#chai-chiller {
+    font-size: 130%;
+}
+
+
+#drank-block {
+    border: 2px solid mediumseagreen;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    order: 2;
+}
+
+#information-block {
+    margin-right: 40px;
+    order: 1;
+}
+
+#drank-block h1 {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+#drank-block h2 {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+#guarantee {
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: dotted white;
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 50px 50px;
+    padding-left: 40px;
+}
+
+.single-photos {
+    display: flex;
+    justify-content: center;
+}
+#italic {
+    font-style: italic;
+}
+
+footer {
+    font-size: 50%;
+    clear: both;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
