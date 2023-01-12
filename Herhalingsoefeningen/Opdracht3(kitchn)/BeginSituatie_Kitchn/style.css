@@ -12,8 +12,8 @@ h1 {
     font-size: 2.5em;
     border-bottom: 2px solid black;
     text-transform: uppercase;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    margin-bottom: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 h2 {
@@ -41,6 +41,8 @@ h2 {
     text-transform: uppercase;
     color: #5b4746;
     font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #navigatie span {
@@ -49,6 +51,7 @@ h2 {
 
 #main-header {
     width: 100%;
+    background-position: center;
     background-image: url("images/headerimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +61,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: #8D99AE;
+    text-shadow: 2px 2px 0px #8D99AE;
 }
 
 #recipes {
@@ -89,7 +92,7 @@ article {
     letter-spacing: 1px;
 }
 
-a:link {
+a {
     color: black;
     text-decoration: none;
 }
@@ -115,7 +118,7 @@ a:link {
     margin-right: auto;
 }
 
-.col-4 {
+.col-xl-4 {
     padding: 12.5px;
 }
 footer {
@@ -141,45 +144,59 @@ footer {
 
 @media screen and (max-width: 769px) {
     #title {
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
     }
 
     #recipes {
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
     }
 
     #recommended {
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 999px) {
     #title {
-        width: 750px;
+        max-width: 750px;
+        width: 100%;
     }
 
     #recipes {
-        width: 750px;
+        max-width: 750px;
+        width: 100%;
     }
 
     #recommended {
-        width: 750px;
+        max-width: 750px;
+        width: 100%;
     }
 
 }
 
 @media screen and (min-width: 1000px) {
     #title {
-        width: 980px;
+        max-width: 980px;
+        width: 100%;
     }
 
     #recipes {
-        width: 980px;
+        max-width: 980px;
+        width: 100%;
+    }
+
+    #navigatie {
+        max-width: 980px;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     #title {
+        max-width: 980px;
         width: 100%;
     }
 }
@@ -190,16 +207,17 @@ footer {
     }
 
     #recommended {
-        width: 980px;
+        max-width: 800px;
+        width: 100%;
     }
 }
 
 /*
-a:link - a normal, unvisited link
+a - a normal, unvisited link
 a:visited - a link the user has visited
 a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked
-a:link {
+a {
   color: red;
 }
 
