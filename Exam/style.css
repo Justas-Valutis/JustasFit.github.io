@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: segoe, Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #00d4ef;
+    font-size: 1.2em;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 992px;
+    background-color: white;
+}
+
+#hoofding {
+    width: 100%;
+    background-color: rgb(193,156,214);
+    height: 50px;
+    display: flex;
+}
+
+#contact {
+    justify-content: flex-end;
+}
+
+#hoofding span a {
+    color: #0000EE;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-decoration-line: none;
+}
+
+#hoofding span {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 1em;
+}
+
+#hoofding span a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    background-color: white;
+
+}
+
+#afbeelding {
+    background-image: url("images/code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#title {
+    font-size: 57.6px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "inhoud paragraph paragraph paragraph paragraph paragraph paragraph";
+
+}
+#inhoud {
+    grid-area: inhoud;
+    margin-left: 25px;
+    border-right: 1px solid black;
+    height: 100%;
+
+}
+
+h2 {
+    font-size: 28.8px;
+}
+
+ol {
+    list-style-type: upper-roman;
+    font-size: 17.28px;
+}
+
+li {
+    list-style: square;
+    padding-left: 10px;
+}
+
+#relationele {
+    font-weight: bold;
+}
+
+article {
+    width: 75%;
+}
+
+#subtitel {
+    font-size: 40.32px;
+    font-weight: bold;
+}
+
+#paragraph {
+    font-size: 1em;
+    grid-area: paragraph;
+    padding-left: 15px;
+    width: 100%;
+}
+
+h3 {
+    font-weight: bold;
+    background-image: url("images/note.svg");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    font-size: 1.1em;
+}
+
+#kader {
+    background-color: #db97ff;
+    border-radius: 15px 15px 15px 15px;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+
+
+.logos {
+    width: 100%;
+}
+
+#inside-paragraph {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: "inside logos";
+}
+
+#relationeel {
+    grid-area: inside;
+}
+
+#logoPagina {
+    grid-area: logos;
+
+}
+
+#alle-logos{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-rows: repeat(6,1fr);
+}
+
+footer {
+    background-color: white;
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    #background {
+        max-width: 992px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #inhoud {
+        border-right: none;
+        display: none;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #inside-paragraph {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #logoPagina {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
