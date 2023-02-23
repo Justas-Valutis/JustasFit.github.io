@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.txtOutput-change {
+    background-color: red;
+    font-size: 3em;
+}
