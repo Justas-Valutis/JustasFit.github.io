@@ -13,7 +13,7 @@ const setup = () => {
         console.log(family);
     }
 
-    const name = prompt('Write the name');
+    const name = window.prompt('Write the name');
     if (name) {
         voegNaamToe(name);
     }
