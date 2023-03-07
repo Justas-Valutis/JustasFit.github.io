@@ -9,6 +9,7 @@ const substring = () => {
     const nr2 = document.getElementById('number2').value;
     const value = document.getElementById('output');
     value.innerHTML = input.substring(nr1, nr2);
+
 }
 
 window.addEventListener("load", setup);
