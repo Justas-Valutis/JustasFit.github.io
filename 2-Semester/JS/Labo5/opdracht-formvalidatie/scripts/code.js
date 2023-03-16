@@ -20,7 +20,7 @@ const validatie = () => {
     //email check
     const txtEmail = document.getElementById('txtEmail');
     const emailSize = txtEmail.value.length;
-    if (emailSize == 1 || emailSize ==3) {
+    if (emailSize == 1 || emailSize ==3 || emailSize ==0) {
         let errEmail = document.getElementById('errEmail').innerText = 'Geef geldige email adres';
         txtEmail.className = 'errors';
     }
