@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<form onsubmit="return false;">
+    <label for="txtVoornaam">Voornaam</label>
+    <input type="text" id="txtVoornaam">
+    <span class="errorMessage" id="errVoornaam"></span>
+    <br>
+    <label for="txtFamilienaam">Familienaam *</label>
+    <input type="text" id="txtFamilienaam" required>
+    <span class="errorMessage" id="errFamilienaam"></span>
+    <br>
+    <label for="gebortedatum">Gebortedatum</label>
+    <input type="date" id="gebortedatum" required>
+    <span class="errorMessage" id="errBday"></span>
+    <br>
+    <label for="txtEmail">Email</label>
+    <input type="text" id="txtEmail" required>
+    <span class="errorMessage" id="errEmail"></span>
+    <br>
+    <label for="nrKids">Aantal kinderen</label>
+    <input type="number" id="nrKids" required>
+    <span class="errorMessage" id="errKids"></span>
+    <br>
+    <input type="submit" value="Valideer" id="Valideer">
+</form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Invul Formulier</title>
+</head>
+<body>
+    <form method="post" action="student/index">
+        <label for="txtName" >First name*: </label>
+        <input placeholder="Your fist name" type="text" id="txtName" required autofocus>
+        <br>
+
+        <label for="txtLastName">Last name*:</label>
+        <input placeholder="Your last name" type="text" id="txtLastName" required>
+        <br>
+        <br>
+
+        <div>Which sport do you train?</div>
+
+        </br>
+
+        <label for="ckbRunning" class="sport">Running</label>
+        <input name="ckbRunning" type="checkbox" id="ckbRunning" value="running">
+        <br>
+        <label for="ckbSwimming" class="sport">Swimming</label>
+        <input name="ckbSwimming" type="checkbox" id="ckbSwimming" value="swimming">
+        <br>
+        <label for="ckbRowing" class="sport">Rowing</label>
+        <input name="ckbRowing" type="checkbox" id="ckbRowing" value="rowing">
+        </br>
+        <br>
+
+        <div>What is your gender?</div>
+        </br>
+
+        <input type="radio" name="gender" id="rdbMale" value="male">
+        <label for="rdbMale">Male</label>
+
+        <br>
+        <input type="radio" name="female" id="rdbFemale" value="female">
+        <label for="rdbFemale">Female</label>
+        <br>
+        <br>
+
+        <label contenteditable="true">Favorite movie:</label>
+        <input type="text" name="txtMovie" id="txtMovie">
+        <br>
+        <label contenteditable="true">Favorite quote:</label>
+        <input type="text" name="txtQuote" id="txtQuote" placeholder="Write your favoite quote">
+        <br>
+
+        <label for="txtPassword">Password*:</label>
+        <input type="text" id="txtPassword" required>
+        <br>
+        <label for="sltFood" >Favorite food: </label>
+        <select id="sltFood" multiple="multiple" name="sltFood" size="3">
+            <option value="1">Hamburger</option>
+            <option value="2">Hot Dog</option>
+            <option value="3">Pizza</option>
+        </select><br/>
+
+        <label for="txtBrowser">Choose a flavor:</label>
+        <input list="dlBrowsers" id="txtBrowser" name="txtBrowser" />
+
+        <datalist id="dlBrowsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist> <br/>
+
+        <input type="file" name="flBestand" id="flBestand"/> <br>
+
+        <label for="txtEmail">Email adress:</label>
+        <input type="email"  name="txtEmail" id="txtEmail" placeholder="Enter your email adress"  required/><br>
+        <label for="txtUrl">Favorite site: </label>
+        <input type="url" name="txtUrl" id="txtUrl" placeholder="Enter the URL of your favorite site" /><br />
+        <label for="nbNumber">Favorite number between 1-10: </label>
+        <input type="number" name="nbNumber" id="nbNumber" max="10" min="1" /><br />
+
+        <label for="rngNumber2">Favorite number between 11-1000: </label>
+        <input type="range" name="rngNumber2" id="rngNumber2" max="1000" min="11" /><br/>
+
+        <label for="txtDate">When were you born? </label>
+        <input type="date" name="txtDate" id="txtDate" /><br />
+        <label for =txtPostcode> Belgium zip-code reg number*:</label>
+        <input type="text" pattern="[1-9][0-9]{3}"
+               name="txtPostcode" id="txtPostcode"
+               placeholder="9999" /><br/>
+
+
+
+        <label for="txtSearch">  Search for something: </label>
+        <input type="search" name="txtSearch" id="txtSearch" /><br />
+        <label for="txtColor"> What is your favorite color? </label>
+        <input type="color" name="txtColor" id="txtColor" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

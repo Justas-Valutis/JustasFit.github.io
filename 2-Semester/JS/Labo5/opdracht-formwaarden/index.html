@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Formwaarden</title>
+</head>
+<body>
+<form onsubmit="return false;">
+    <label for="cbRoker">Is roker?</label>
+    <input type="checkbox" name="roker" id="cbRoker">
+    <br>
+    <span>Moedertaal</span>
+    <input type="radio" class="moedertaal" name="taal" value="nl" id="nl">
+    <label for="nl">Nederlands</label>
+    <input type="radio" class="moedertaal" name="taal" value="fr" id="fr">
+    <label for="fr">Frans</label>
+    <input type="radio" class="moedertaal" name="taal" value="en" id="en">
+    <label for="en">Engels</label>
+    <br>
+    <label for="favBuurland">Favoriete buurland</label>
+    <select name="favBuurland" id="favBuurland">
+        <option value="Nederland">Nederland</option>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Duistsland">Duistsland</option>
+    </select>
+    <br>
+    <label for="bestelling">Bestelling</label>
+    <select name="bestelling" id="bestelling" multiple size="6">
+        <option value="aardapellen">aardapellen</option>
+        <option value="brood">brood</option>
+        <option value="melk">melk</option>
+        <option value="biefstuk">biefstuk</option>
+        <option value="chips">chips</option>
+        <option value="krant">krant</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Toon result" id="submit">
+</form>
+</body>
+</html>
