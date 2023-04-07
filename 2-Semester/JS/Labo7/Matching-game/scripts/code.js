@@ -22,6 +22,7 @@ let NUMBER;
 let NUMBER2;
 const REVERSE_SIDE = "http://localhost:63342/JustasFit.github.io/2-Semester/JS/Labo7/Matching-game/images/achterkant.png"
 let IS_BUSSY = false;
+let firstImage;
 
 const setup = () => {
     //adding event listener on all image attributes
@@ -36,13 +37,17 @@ const setup = () => {
     headLine.style.width = gameAreaWidth + 'px';
 }
 
-    const flipCard = event => {
+const flipCard = event => {
+    if (!IS_BUSSY) {
         const movesCount = document.getElementById('movesCount');
         const headLine = document.getElementById('headLine');
+        const gameArea = document.getElementById('gameArea');
         if (CLICK_COUNT == 0) {
             NUMBER = Number(event.target.getAttribute('alt'));
             SRC1 = "http://localhost:63342/JustasFit.github.io/2-Semester/JS/Labo7/Matching-game/" + images[NUMBER];
             event.currentTarget.src = SRC1;
+            firstImage = event.currentTarget;
+            firstImage.removeEventListener('click', flipCard);
             CLICK_COUNT++;
         } else {
             NUMBER2 = Number(event.target.getAttribute('alt'));
@@ -52,6 +57,7 @@ const setup = () => {
         }
         //If it was clicked twice we start counting how many times played, and comnparing the values;
         if (CLICK_COUNT == 2) {
+            firstImage.addEventListener('click', flipCard);
             movesCount.innerText = Number(movesCount.innerHTML) + 1;
             CLICK_COUNT = 0;
             //getting attributes with values on first and second click
@@ -62,23 +68,27 @@ const setup = () => {
                 //removing event listener if it was guessed right
                 picture1[0].removeEventListener('click', flipCard);
                 picture2[0].removeEventListener('click', flipCard);
-
                 headLine.style.backgroundColor = 'green';
+                IS_BUSSY = true;
                 setTimeout(function () {
                     headLine.style.backgroundColor = 'steelblue';
+                    IS_BUSSY = false;
                 }, 1000);
             } else {
                 headLine.style.backgroundColor = 'red';
+                gameArea.style.cursor = 'wait';
                 IS_BUSSY = true;
                 setTimeout(function () {
                     picture1[0].src = REVERSE_SIDE;
                     picture2[0].src = REVERSE_SIDE;
                     headLine.style.backgroundColor = 'steelblue';
+                    gameArea.style.cursor = 'auto';
                     IS_BUSSY = false;
                 }, 2000);
 
             }
         }
     }
+}
 
 window.addEventListener("load", setup);
