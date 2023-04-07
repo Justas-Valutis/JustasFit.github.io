@@ -3,15 +3,16 @@ let AANTAL_HORIZONTAAL=4;
 let AANTAL_VERTICAAL=3;
 let AANTAL_KAARTEN=6;
 
-const array = ["kaart1.png", "kaart2.png", "kaart3.png", "kaart4.png", "kaart5.png", "kaart6.png"];
+const array = ["kaart1.png", "kaart2.png", "kaart3.png", "kaart4.png", "kaart5.png", "kaart6.png", "kaart1.png", "kaart2.png", "kaart3.png", "kaart4.png", "kaart5.png", "kaart6.png"];
 let images =[];
-let b = 0;
-for (let i =0; i < 12; i++) {
-    if (i < AANTAL_KAARTEN) {
-        images.push("images/" + array[i]);
-    } else {
-        images.push("images/"+ array[b]);
-        b++;
+let finished = false;
+while (!finished) {
+    let i =Math.floor(Math.random()* array.length);
+    console.log(i);
+    images.push("images/" + array[i]);
+    array.splice(i, 1);
+    if (array.length ==0) {
+        finished = true;
     }
 }
 
