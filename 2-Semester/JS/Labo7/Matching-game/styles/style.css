@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    width: fit-content;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    background-color: steelblue;
+    border: 5px solid steelblue;
+    margin: 0;
+    padding: 0px;
+}
+
+section {
+    font-size: 1.5em;
+    background-color: steelblue;
+}
