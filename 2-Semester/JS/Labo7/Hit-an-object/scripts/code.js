@@ -4,9 +4,6 @@ const setup = () => {
     const BTNstart = document.getElementById('BTNstart');
     let intervalFunctie;
     BTNstart.addEventListener('click', () => {intervalFunctie=setInterval(play, 1000)});
-
-
-
 }
 
 

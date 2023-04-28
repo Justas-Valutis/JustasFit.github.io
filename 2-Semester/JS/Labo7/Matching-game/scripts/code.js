@@ -1,8 +1,4 @@
 
-let AANTAL_HORIZONTAAL=4;
-let AANTAL_VERTICAAL=3;
-let AANTAL_KAARTEN=6;
-
 const array = ["kaart1.png", "kaart2.png", "kaart3.png", "kaart4.png", "kaart5.png", "kaart6.png", "kaart1.png", "kaart2.png", "kaart3.png", "kaart4.png", "kaart5.png", "kaart6.png"];
 let images =[];
 let finished = false;
