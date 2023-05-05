@@ -29,7 +29,7 @@ const bewaarBewerktePersoon = () => {
         lstPersonen.selectedIndex.text = persoon.voornaam + " " + persoon.familieNaam;
         // const option = document.getElementsByTagName('option');
         // option.item(selectedIndex)
-        //updatePersoon(); 
+        //updatePersoon();
     }
    //personen.push(persoon); //toevoegen aan interne lijst
 
