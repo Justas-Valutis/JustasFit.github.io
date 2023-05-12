@@ -1,0 +1,29 @@
+#tafels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 10px;
+
+
+}
+
+.header {
+    background-color: steelblue;
+}
+
+.row {
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.row-even {
+    background-color: lightgrey;
+    border: 1px solid black;
+}
