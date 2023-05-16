@@ -38,7 +38,7 @@ const createElementWithClassName = (element, className) => {
 }
 
 const find = () => {
-    let i = 0;
+    let i = 1;
     let count = 0;
     let rij = 0;
     let finished = false;
@@ -51,9 +51,10 @@ const find = () => {
             count++
             if (count===3) {
                 let seatNr = i;
-                let accept = confirm('Je hebt vrije plaats op rij ' + rij + ' seat ' + (seatNr-3)  + ' tot ' + seatNr);
+                let accept = confirm('Je hebt vrije plaats op rij ' + rij + ' seat ' + (seatNr-1)  + ' tot ' + (seatNr+1));
                 if (accept) {
                     finished = true;
+                    pickSeats(seatNr);
                 }
             }
         } else {
@@ -61,6 +62,16 @@ const find = () => {
         }
         i++;
     }
+}
+
+const pickSeats = (seatNr) => {
+
+    const seatsArray = document.getElementsByClassName('seat');
+    console.log(seatsArray.length);
+    console.log(seatNr);
+    seatsArray[seatNr].setAttribute('src', 'images/seat_select.png');
+    seatsArray[seatNr+1].setAttribute('src', 'images/seat_select.png');
+    seatsArray[seatNr+2].setAttribute('src', 'images/seat_select.png');
 }
 
 window.addEventListener("load", setup);
