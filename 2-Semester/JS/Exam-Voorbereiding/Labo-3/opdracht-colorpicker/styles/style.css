@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+
+#colorBox {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}

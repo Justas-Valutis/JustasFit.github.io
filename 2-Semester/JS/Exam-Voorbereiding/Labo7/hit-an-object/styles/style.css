@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+#playField {
+    height: 800px;
+    width: 600px;
+}
+
+#imgX {
+    position: absolute;
+    left:50px
+
+}

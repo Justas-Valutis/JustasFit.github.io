@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" charset="utf-8"
+            src="scripts/code.js"></script>
+    <title>Opdracht-formulier</title>
+</head>
+<body>
+<form>
+    <label for="txtFirstName">First Name:*</label>
+    <input type="text" id="txtFirstName" name="txtFirstName" autofocus required placeholder="Your first name">
+    <br>
+    <label for="txtLastName">Last name:*</label>
+    <input type="text" id="txtLastName" name="txtLastName" required placeholder="Your family name">
+    <br>
+    <p>Which sport do you train?></p>
+    <label for="ckbRunning">Running</label>
+    <input type="checkbox" id="ckbRunning" name="ckbRunning" value="running">
+    <br>
+    <label for="ckbSwimming">Swimming</label>
+    <input type="checkbox" id="ckbSwimming" name="ckbSwimming" value="swimming">
+    <br>
+    <label for="ckbRowing"></label>
+    <input type="checkbox" id="ckbRowing" name="ckbRowing" value="rowing">
+    <br>
+    <p>What is your gender?</p>
+    <label for="rdbMale">Male</label>
+    <input type="radio" id="rdbMale" name="gender" value="male">
+    <br>
+    <label for="rdbFemale">Female</label>
+    <input type="radio" id="rdbFemale" name="gender" value="female">
+    <br>
+    <label for="txtMovie">Favorite Movie:</label>
+    <input type="text" id="txtMovie" name="txtMovie">
+    <br>
+    <label for="txtQuote">Favorite quote:</label>
+    <input type="text" id="txtQuote" placeholder="Write your favorite quote">
+    <br>
+    <label for="txtPsw">Password</label>
+    <input type="text" id="txtPsw" name="psw" required>
+    <br>
+    <label for="sldFood">Favorite food:</label>
+    <select name="sldFood" id="sldFood" size="3" multiple="multiple">
+        <option value="1">Hamburger</option>
+        <option value="2">Hot dog</option>
+        <option value="3">Pizza</option>
+    </select>
+    <br>
+    <label for="txtFalvor">Choose a falvor:</label>
+    <input list="Browsers" id="txtFalvor" nane="Falbvour">
+    <datalist id="Browsers">
+        <option value="Internet Exploer"></option>
+        <option value="FireFox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <br>
+    <input type="file" name="flBestand">
+    <label for="txtEmail">Email adress:</label>
+    <br>
+    <label for="txtEmail">Email adress:</label>
+    <input type="text" id="txtEmail" placeholder="Enter your email adress" required name="txtEmail">
+    <br>
+    <label for="txtFavWebsite">Favorite website:</label>
+    <input type="text" id="txtFavWebsite" name="FavWebsite" placeholder="Enter Fav website">
+    <br>
+    <label for="nr">Favorite number between 1-10</label>
+    <input type="number" min="0" max="10" id="nr" name="favNumber">
+    <br>
+    <label for="sldNumber">Favorite number between 11-1000</label>
+    <input type="range" min="11" max="1000" id="sldNumber">
+    <br>
+    <label for="txtDate">When was you born?</label>
+    <input type="date" id="txtDate" name="birthDate">
+    <br>
+    <label for="txtPostcode">Belgium zip-code reg Number:*</label>
+    <input type="text" id="txtPostcode" required name="postcode" pattern="[1-9][0-9]{3}">
+    <br>
+    <label for="txtSearch">Search for something:</label>
+    <input type="search" name="txtSearch" id="txtSearch">
+    <br>
+    <label for="txtColor">What is your favorite color?</label>
+    <input type="color" id="txtColor" name="txtColor">
+    <br>
+    <input type="submit" value="submit">
+
+
+
+
+</form>
+</body>
+</html>

@@ -59,7 +59,6 @@ const updateMainSwatch = event => {
     const red = event.currentTarget.getAttribute('data-red');
     const green = event.currentTarget.getAttribute('data-green');
     const blue = event.currentTarget.getAttribute('data-blue');
-
     //giving the slider values of clicked swatch elelement
     document.getElementById('sldRed').value = red
     document.getElementById('sldBlue').value = blue;
