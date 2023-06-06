@@ -1,5 +1,3 @@
-let objecten = [];
-
 const setup = () => {
     document.getElementById('btnGO').addEventListener('click', go);
     updateFromLocalStorage();
@@ -58,17 +56,21 @@ const go = () => {
 }
 
 const saveObject = (title, zoekWord, link, backgroundColor, btnColor) => {
-    let object = {};
-    object = {
+    let object = {
         title: title,
         zoekWord: zoekWord,
         link: link,
         backgroundColor: backgroundColor,
         btnColor: btnColor
     }
-    objecten.push(object);
-    objectenJson = JSON.stringify(objecten);
-    localStorage.setItem('labo-10', objectenJson);
+
+    let objectHistory;
+    objectHistory = JSON.parse(localStorage.getItem('labo-10'));
+    if (!objectHistory) {
+        objectHistory =[]
+    }
+    objectHistory.push(object);
+    localStorage.setItem('labo-10', JSON.stringify(objectHistory));
 }
 
 const updateFromLocalStorage = () => {
@@ -77,7 +79,7 @@ const updateFromLocalStorage = () => {
         objecten = JSON.parse(objecten);
         let i=0;
         while (i < objecten.length) {
-            createCard(objecten[i].title, objecten[i].zoekWord, objecten[i].backgroundColor, objecten[i].btnColor);
+            createCard(objecten[i].title, objecten[i].zoekWord, objecten[i].link, objecten[i].backgroundColor, objecten[i].btnColor);
             i++;
         }
     }
