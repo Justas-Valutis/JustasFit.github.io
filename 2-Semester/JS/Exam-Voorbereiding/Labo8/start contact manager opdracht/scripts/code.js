@@ -7,19 +7,19 @@ const setup = () => {
     let storage = localStorage.getItem('labo8');
     if (storage !==null) {
         let lijst = document.getElementById('lstPersonen');
-        storage = JSON.parse(storage);
-        for (let i=0; i < storage.length; i++) {
-            document.getElementById('txtVoornaam').value = storage[i].voornaam;
-            document.getElementById('txtFamilienaam').value = storage[i].familieNaam;
-            document.getElementById('txtGeboorteDatum').value = storage[i].geborteDatum;
-            document.getElementById('txtEmail').value = storage[i].email;
-            document.getElementById('txtAantalKinderen').value= storage[i].kinderen;
+        personen = JSON.parse(storage);
+        for (let i=0; i < personen.length; i++) {
+            document.getElementById('txtVoornaam').value = personen[i].voornaam;
+            document.getElementById('txtFamilienaam').value = personen[i].familieNaam;
+            document.getElementById('txtGeboorteDatum').value = personen[i].geborteDatum;
+            document.getElementById('txtEmail').value = personen[i].email;
+            document.getElementById('txtAantalKinderen').value= personen[i].kinderen;
             let option = document.createElement('option');
-            let text = document.createTextNode(storage[i].voornaam + ' ' + storage[i].familieNaam);
+            let text = document.createTextNode(personen[i].voornaam + ' ' + personen[i].familieNaam);
             option.appendChild(text);
             lijst.appendChild(option);
+            option.setAttribute('email', personen[i].email);
             option.addEventListener('click', display);
-
         }
     }
 };
@@ -82,9 +82,11 @@ const fillPersoon = () => {
 
 }
 const display = () => {
+    console.log(personen);
     let lijstPersonen = document.getElementById('lstPersonen');
     let savedEmail = lijstPersonen.options[lijstPersonen.selectedIndex].getAttribute('email');
     let person = personen.find(p => p.email === savedEmail);
+    console.log(savedEmail);
     document.getElementById('txtVoornaam').value = person.voornaam;
     document.getElementById('txtFamilienaam').value = person.familieNaam;
     document.getElementById('txtGeboorteDatum').value = person.geborteDatum;

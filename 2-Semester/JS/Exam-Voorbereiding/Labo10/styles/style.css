@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+#zoekOpdracht {
+    margin: 2px;
+    font-weight:bold;
+}
+
+#txtInput {
+    height: 30px;
+    width: 80%;
+    border: 2px solid dodgerblue;
+}
+
+#start {
+    color: grey;
+}
+
+#btnGO {
+    height: 30px;
+    width: 80%;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+}
